@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    background-size: contain;
+    position: relative;
+}
+
+.container{
+    max-width: 450px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.text-content {
+    padding: 10%;
+    text-align: center;
+    
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 20px;
+    
+}
+
+.subtitle{
+    color: rgb(134, 134, 134);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    
+}
+
+.box{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+}
+
+.left-side img{
+    width: 40px;
+}
+
+.left-side div{
+    margin-left: 20px;
+}
+
+.left-side div h5{
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.left-side div p{
+    color:rgb(134, 134, 134);
+    font-size: 14px;
+}
+
+.box a{
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    transition: color 0.3s ease;
+}
+
+.box a:hover{
+    text-decoration: none;
+    color:  hsl(245, 65%, 65%);
+}
+
+.proceed{
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 1px rgba(186, 186, 210, 0.61);
+}
+
+.proceed a{
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 12px;
+    color: white;
+    background-color:hsl(245, 75%, 52%);
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.proceed a:hover{
+    background-color: hsl(245, 65%, 65%);
+}
+
+.cancel a{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:460px) {
+
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no repeat;
+        font-size: 12px;
+    }
+
+    .container{
+        max-width: 85%;
+    }
+
+    .box{
+        padding: 10px;
+    }
+     .left-side div p,
+     .box a{
+        font-size: 12px;
+     }
+      
+     .proceed a{
+        padding:10px 0 ;
+     }
+
+     
+    
+}
+
+
+
+
+
+
